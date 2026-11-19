@@ -1,0 +1,3 @@
+# Exclude offline Python training pipeline from Vercel deployment
+# (Trained model artifact is already exported to src/data/model-artifact.json)
+ml/
