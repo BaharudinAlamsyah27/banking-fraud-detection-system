@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+
+# Next.js
+.next/
+out/
+build/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Misc
+.DS_Store
+*.pem
+.env
+.env*.local
+next-env.d.ts

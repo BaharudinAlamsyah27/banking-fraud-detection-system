@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #f8f8f9;
+  color: #09090b;
+  font-family: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+html.dark body {
+  background-color: #09090b;
+  color: #fafafa;
+}
+
+code,
+pre {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* Keep numeric/ID typography unified with IBM Plex Sans tabular numerals (no stiff slashed zeros) */
+.font-mono {
+  font-family: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 3px;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #27272a;
+}
